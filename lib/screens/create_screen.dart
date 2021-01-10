@@ -591,7 +591,7 @@ class _CreateScreenState extends State<CreateScreen> {
                           top: 16,
                           right: 16,
                         ),
-                        hintText: 'ازلاعاتی در مورز جلسه',
+                        hintText: 'اطلاعاتی در مورد جلسه',
                         hintStyle: TextStyle(
                           color: Colors.grey.withOpacity(0.6),
                           fontWeight: FontWeight.bold,
@@ -669,7 +669,7 @@ class _CreateScreenState extends State<CreateScreen> {
                           top: 16,
                           right: 16,
                         ),
-                        hintText: 'Place of the event',
+                        hintText: 'محل برگزاری حلسه را تعیین کنید',
                         hintStyle: TextStyle(
                           color: Colors.grey.withOpacity(0.6),
                           fontWeight: FontWeight.bold,
@@ -783,7 +783,7 @@ class _CreateScreenState extends State<CreateScreen> {
                                 top: 16,
                                 right: 16,
                               ),
-                              hintText: 'Enter attendee email',
+                              hintText: 'ایمیل مدعوین را وارد کنید',
                               hintStyle: TextStyle(
                                 color: Colors.grey.withOpacity(0.6),
                                 fontWeight: FontWeight.bold,
