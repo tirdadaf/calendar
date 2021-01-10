@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "437243489118",
+    "firebase_url": "https://event-2fe3a-default-rtdb.firebaseio.com",
+    "project_id": "event-2fe3a",
+    "storage_bucket": "event-2fe3a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:437243489118:android:29754cce4da1873f443dcf",
+        "android_client_info": {
+          "package_name": "com.tirdad.event"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "437243489118-7m79d16fqdjgg7g8v5pqdg8g8fd0qu5t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATvcZB1j_nJfr_LCH0Vhwkwjg2PDkxUw8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "437243489118-7m79d16fqdjgg7g8v5pqdg8g8fd0qu5t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
