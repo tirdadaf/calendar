@@ -111,10 +111,10 @@ class _EditScreenState extends State<EditScreen> {
     if (value != null) {
       value = value?.trim();
       if (value.isEmpty) {
-        return 'Title can\'t be empty';
+        return 'عنوان نمیتواند خالی باشد';
       }
     } else {
-      return 'Title can\'t be empty';
+      return 'عنوان نمیتواند هالی باشد';
     }
 
     return null;
@@ -137,10 +137,10 @@ class _EditScreenState extends State<EditScreen> {
         }
       }
     } else {
-      return 'Can\'t add an empty email';
+      return 'ابمیل نمیتواند خالی باشد';
     }
 
-    return 'Invalid email';
+    return 'ایمیل نادرست است';
   }
 
   @override
@@ -194,7 +194,7 @@ class _EditScreenState extends State<EditScreen> {
           color: Colors.grey, //change your color here
         ),
         title: Text(
-          'Edit Event',
+          'ویرایش دعوتنامه',
           style: TextStyle(
             color: CustomColor.dark_blue,
             fontSize: 22,
@@ -234,7 +234,7 @@ class _EditScreenState extends State<EditScreen> {
                     ),
                   )
                 : Text(
-                    'DELETE',
+                    'حذف',
                     style: TextStyle(
                       color: Colors.red,
                       fontSize: 20,
@@ -255,7 +255,7 @@ class _EditScreenState extends State<EditScreen> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'You can edit the event details on this page. You can also choose to notify the attendees about this change.',
+                      'در این صفحه دعوتنامه ها ویرایش میشوند و میتوان مدعوین را از تقییرات آگاه کرد',
                       style: TextStyle(
                         color: Colors.black87,
                         fontFamily: 'Raleway',
@@ -278,7 +278,7 @@ class _EditScreenState extends State<EditScreen> {
                     SizedBox(height: 16.0),
                     RichText(
                       text: TextSpan(
-                        text: 'Select Date',
+                        text: 'تاریخ را تعیین کنید',
                         style: TextStyle(
                           color: CustomColor.dark_cyan,
                           fontFamily: 'Raleway',
@@ -335,7 +335,7 @@ class _EditScreenState extends State<EditScreen> {
                           top: 16,
                           right: 16,
                         ),
-                        hintText: 'eg: September 10, 2020',
+                        hintText: ' ',
                         hintStyle: TextStyle(
                           color: Colors.grey.withOpacity(0.6),
                           fontWeight: FontWeight.bold,
@@ -344,7 +344,7 @@ class _EditScreenState extends State<EditScreen> {
                         errorText: isEditingDate && textControllerDate.text != null
                             ? textControllerDate.text.isNotEmpty
                                 ? null
-                                : 'Date can\'t be empty'
+                                : 'تاریخ نمیتواند خالی باشد'
                             : null,
                         errorStyle: TextStyle(
                           fontSize: 12,
@@ -355,7 +355,7 @@ class _EditScreenState extends State<EditScreen> {
                     SizedBox(height: 10),
                     RichText(
                       text: TextSpan(
-                        text: 'Start Time',
+                        text: 'ساعت شروع',
                         style: TextStyle(
                           color: CustomColor.dark_cyan,
                           fontFamily: 'Raleway',
@@ -411,7 +411,7 @@ class _EditScreenState extends State<EditScreen> {
                           top: 16,
                           right: 16,
                         ),
-                        hintText: 'eg: 09:30 AM',
+                        hintText: ' ',
                         hintStyle: TextStyle(
                           color: Colors.grey.withOpacity(0.6),
                           fontWeight: FontWeight.bold,
@@ -420,7 +420,7 @@ class _EditScreenState extends State<EditScreen> {
                         errorText: isEditingStartTime && textControllerStartTime.text != null
                             ? textControllerStartTime.text.isNotEmpty
                                 ? null
-                                : 'Start time can\'t be empty'
+                                : 'ساعت شروع جلسه نمیتواند خالی باشد'
                             : null,
                         errorStyle: TextStyle(
                           fontSize: 12,
@@ -431,7 +431,7 @@ class _EditScreenState extends State<EditScreen> {
                     SizedBox(height: 10),
                     RichText(
                       text: TextSpan(
-                        text: 'End Time',
+                        text: 'ساعت خاتمه',
                         style: TextStyle(
                           color: CustomColor.dark_cyan,
                           fontFamily: 'Raleway',
@@ -487,7 +487,7 @@ class _EditScreenState extends State<EditScreen> {
                           top: 16,
                           right: 16,
                         ),
-                        hintText: 'eg: 11:30 AM',
+                        hintText: ' ',
                         hintStyle: TextStyle(
                           color: Colors.grey.withOpacity(0.6),
                           fontWeight: FontWeight.bold,
@@ -496,7 +496,7 @@ class _EditScreenState extends State<EditScreen> {
                         errorText: isEditingEndTime && textControllerEndTime.text != null
                             ? textControllerEndTime.text.isNotEmpty
                                 ? null
-                                : 'End time can\'t be empty'
+                                : 'ساعت پلیان جلسه نمتواند خالی باشد'
                             : null,
                         errorStyle: TextStyle(
                           fontSize: 12,
@@ -507,7 +507,7 @@ class _EditScreenState extends State<EditScreen> {
                     SizedBox(height: 10),
                     RichText(
                       text: TextSpan(
-                        text: 'Title',
+                        text: 'عنوان',
                         style: TextStyle(
                           color: CustomColor.dark_cyan,
                           fontFamily: 'Raleway',
@@ -575,7 +575,7 @@ class _EditScreenState extends State<EditScreen> {
                           top: 16,
                           right: 16,
                         ),
-                        hintText: 'eg: Birthday party of John',
+                        //hintText: 'eg: Birthday party of John',
                         hintStyle: TextStyle(
                           color: Colors.grey.withOpacity(0.6),
                           fontWeight: FontWeight.bold,
@@ -591,7 +591,7 @@ class _EditScreenState extends State<EditScreen> {
                     SizedBox(height: 10),
                     RichText(
                       text: TextSpan(
-                        text: 'Description',
+                        text: 'دستور جلسه',
                         style: TextStyle(
                           color: CustomColor.dark_cyan,
                           fontFamily: 'Raleway',
@@ -659,7 +659,7 @@ class _EditScreenState extends State<EditScreen> {
                           top: 16,
                           right: 16,
                         ),
-                        hintText: 'eg: Some information about this event',
+                        //hintText: 'eg: Some information about this event',
                         hintStyle: TextStyle(
                           color: Colors.grey.withOpacity(0.6),
                           fontWeight: FontWeight.bold,
@@ -670,7 +670,7 @@ class _EditScreenState extends State<EditScreen> {
                     SizedBox(height: 10),
                     RichText(
                       text: TextSpan(
-                        text: 'Location',
+                        text: 'محل برگزاری',
                         style: TextStyle(
                           color: CustomColor.dark_cyan,
                           fontFamily: 'Raleway',
@@ -748,7 +748,7 @@ class _EditScreenState extends State<EditScreen> {
                     SizedBox(height: 10),
                     RichText(
                       text: TextSpan(
-                        text: 'Attendees',
+                        text: 'مدعوین',
                         style: TextStyle(
                           color: CustomColor.dark_cyan,
                           fontFamily: 'Raleway',
@@ -851,7 +851,7 @@ class _EditScreenState extends State<EditScreen> {
                                 top: 16,
                                 right: 16,
                               ),
-                              hintText: 'Enter attendee email',
+                              hintText: 'ایمیل مدعوین را وارد گنید',
                               hintStyle: TextStyle(
                                 color: Colors.grey.withOpacity(0.6),
                                 fontWeight: FontWeight.bold,
@@ -901,7 +901,7 @@ class _EditScreenState extends State<EditScreen> {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text(
-                                'Notify attendees',
+                                'برای مدعوین اعلان ارسال شود',
                                 style: TextStyle(
                                   color: CustomColor.dark_cyan,
                                   fontFamily: 'Raleway',
@@ -1059,7 +1059,7 @@ class _EditScreenState extends State<EditScreen> {
                                   ),
                                 )
                               : Text(
-                                  'MODIFY',
+                                  'ویرایش',
                                   style: TextStyle(
                                     fontFamily: 'Raleway',
                                     fontSize: 22,

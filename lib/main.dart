@@ -8,7 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:googleapis/calendar/v3.dart' as cal;
 import 'dart:io' show Platform;
-
+import 'package:flutter_localizations/flutter_localizations.dart';
 Future<void> main() async {
   if (Platform.isAndroid) {
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
@@ -40,6 +40,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      localizationsDelegates: [
+        GlobalCupertinoLocalizations.delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+      ],
+      supportedLocales: [
+        Locale("fa", "IR"), // OR Locale('ar', 'AE') OR Other RTL locales
+      ],
+      locale: Locale("fa", "IR"), // OR Locale('ar', 'AE') OR Other RTL locales,
+
       title: 'Events Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(

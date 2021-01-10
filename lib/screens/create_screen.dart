@@ -107,10 +107,10 @@ class _CreateScreenState extends State<CreateScreen> {
     if (value != null) {
       value = value?.trim();
       if (value.isEmpty) {
-        return 'Title can\'t be empty';
+        return 'عنوان نمیتواند خالی باشد';
       }
     } else {
-      return 'Title can\'t be empty';
+      return 'عنوان نمیتواند خالی باشد';
     }
 
     return null;
@@ -121,7 +121,7 @@ class _CreateScreenState extends State<CreateScreen> {
       value = value.trim();
 
       if (value.isEmpty) {
-        return 'Can\'t add an empty email';
+        return 'ایمیل تنیتواند خالی باشد';
       } else {
         final regex = RegExp(
             r"^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,253}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,253}[a-zA-Z0-9])?)*$");
@@ -133,10 +133,10 @@ class _CreateScreenState extends State<CreateScreen> {
         }
       }
     } else {
-      return 'Can\'t add an empty email';
+      return 'ایمیل تمیتواند خالی باشد';
     }
 
-    return 'Invalid email';
+    return 'ایمیل نادرست است';
   }
 
   @override
@@ -168,7 +168,7 @@ class _CreateScreenState extends State<CreateScreen> {
           color: Colors.grey, //change your color here
         ),
         title: Text(
-          'Create Event',
+          'صدور دعوتتنامه',
           style: TextStyle(
             color: CustomColor.dark_blue,
             fontSize: 22,
@@ -187,7 +187,7 @@ class _CreateScreenState extends State<CreateScreen> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'This will add a new event to the events list. You can also add video conferencing option and choose to notify the attendees of this event.',
+                      'در این قسمت دعوتنامه صادر میگردد و میتوان ایمیل مدعوین را نیز وارد کرد و در صووت اینکه جلسه ویدءویی باشد لینک آن را نیز وارد کرد',
                       style: TextStyle(
                         color: Colors.black87,
                         fontFamily: 'Raleway',
@@ -198,7 +198,7 @@ class _CreateScreenState extends State<CreateScreen> {
                     ),
                     SizedBox(height: 10),
                     Text(
-                      'You will have access to modify or remove the event afterwards.',
+                      'یعلاوه شما قادر یه تغییر یا حذف اطلاعات نیز خواهید بود',
                       style: TextStyle(
                         color: Colors.grey,
                         fontFamily: 'Raleway',
@@ -210,7 +210,7 @@ class _CreateScreenState extends State<CreateScreen> {
                     SizedBox(height: 16.0),
                     RichText(
                       text: TextSpan(
-                        text: 'Select Date',
+                        text: 'تاریخ را وارد کنید',
                         style: TextStyle(
                           color: CustomColor.dark_cyan,
                           fontFamily: 'Raleway',
@@ -267,7 +267,7 @@ class _CreateScreenState extends State<CreateScreen> {
                           top: 16,
                           right: 16,
                         ),
-                        hintText: 'eg: September 10, 2020',
+                      //  hintText: 'eg: September 10, 2020',
                         hintStyle: TextStyle(
                           color: Colors.grey.withOpacity(0.6),
                           fontWeight: FontWeight.bold,
@@ -276,7 +276,7 @@ class _CreateScreenState extends State<CreateScreen> {
                         errorText: isEditingDate && textControllerDate.text != null
                             ? textControllerDate.text.isNotEmpty
                                 ? null
-                                : 'Date can\'t be empty'
+                                : 'تاریخ نمیتواند ختلی باشد'
                             : null,
                         errorStyle: TextStyle(
                           fontSize: 12,
@@ -287,7 +287,7 @@ class _CreateScreenState extends State<CreateScreen> {
                     SizedBox(height: 10),
                     RichText(
                       text: TextSpan(
-                        text: 'Start Time',
+                        text: 'ساعت شروع',
                         style: TextStyle(
                           color: CustomColor.dark_cyan,
                           fontFamily: 'Raleway',
@@ -343,7 +343,7 @@ class _CreateScreenState extends State<CreateScreen> {
                           top: 16,
                           right: 16,
                         ),
-                        hintText: 'eg: 09:30 AM',
+                      //  hintText: 'eg: 09:30 AM',
                         hintStyle: TextStyle(
                           color: Colors.grey.withOpacity(0.6),
                           fontWeight: FontWeight.bold,
@@ -363,7 +363,7 @@ class _CreateScreenState extends State<CreateScreen> {
                     SizedBox(height: 10),
                     RichText(
                       text: TextSpan(
-                        text: 'End Time',
+                        text: 'ساعت خاتمه',
                         style: TextStyle(
                           color: CustomColor.dark_cyan,
                           fontFamily: 'Raleway',
@@ -419,7 +419,7 @@ class _CreateScreenState extends State<CreateScreen> {
                           top: 16,
                           right: 16,
                         ),
-                        hintText: 'eg: 11:30 AM',
+                     //   hintText: 'eg: 11:30 AM',
                         hintStyle: TextStyle(
                           color: Colors.grey.withOpacity(0.6),
                           fontWeight: FontWeight.bold,
@@ -428,7 +428,7 @@ class _CreateScreenState extends State<CreateScreen> {
                         errorText: isEditingEndTime && textControllerEndTime.text != null
                             ? textControllerEndTime.text.isNotEmpty
                                 ? null
-                                : 'End time can\'t be empty'
+                                : 'ساعت خاتمه نمیتواند خالی باشد'
                             : null,
                         errorStyle: TextStyle(
                           fontSize: 12,
@@ -439,7 +439,7 @@ class _CreateScreenState extends State<CreateScreen> {
                     SizedBox(height: 10),
                     RichText(
                       text: TextSpan(
-                        text: 'Title',
+                        text: 'عنوان',
                         style: TextStyle(
                           color: CustomColor.dark_cyan,
                           fontFamily: 'Raleway',
@@ -507,7 +507,7 @@ class _CreateScreenState extends State<CreateScreen> {
                           top: 16,
                           right: 16,
                         ),
-                        hintText: 'eg: Birthday party of John',
+                        //hintText: 'eg: Birthday party of John',
                         hintStyle: TextStyle(
                           color: Colors.grey.withOpacity(0.6),
                           fontWeight: FontWeight.bold,
@@ -523,7 +523,7 @@ class _CreateScreenState extends State<CreateScreen> {
                     SizedBox(height: 10),
                     RichText(
                       text: TextSpan(
-                        text: 'Description',
+                        text: 'دستور جلسه',
                         style: TextStyle(
                           color: CustomColor.dark_cyan,
                           fontFamily: 'Raleway',
@@ -591,7 +591,7 @@ class _CreateScreenState extends State<CreateScreen> {
                           top: 16,
                           right: 16,
                         ),
-                        hintText: 'eg: Some information about this event',
+                        hintText: 'ازلاعاتی در مورز جلسه',
                         hintStyle: TextStyle(
                           color: Colors.grey.withOpacity(0.6),
                           fontWeight: FontWeight.bold,
@@ -602,7 +602,7 @@ class _CreateScreenState extends State<CreateScreen> {
                     SizedBox(height: 10),
                     RichText(
                       text: TextSpan(
-                        text: 'Location',
+                        text: 'محل جلسه',
                         style: TextStyle(
                           color: CustomColor.dark_cyan,
                           fontFamily: 'Raleway',
@@ -680,7 +680,7 @@ class _CreateScreenState extends State<CreateScreen> {
                     SizedBox(height: 10),
                     RichText(
                       text: TextSpan(
-                        text: 'Attendees',
+                        text: 'مدعوین',
                         style: TextStyle(
                           color: CustomColor.dark_cyan,
                           fontFamily: 'Raleway',
@@ -833,7 +833,7 @@ class _CreateScreenState extends State<CreateScreen> {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text(
-                                'Notify attendees',
+                                'ارسال اعلان',
                                 style: TextStyle(
                                   color: CustomColor.dark_cyan,
                                   fontFamily: 'Raleway',
@@ -861,7 +861,7 @@ class _CreateScreenState extends State<CreateScreen> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          'Add video conferencing',
+                          'بصورت ویدءو کنقرانس',
                           style: TextStyle(
                             color: CustomColor.dark_cyan,
                             fontFamily: 'Raleway',
@@ -1015,7 +1015,7 @@ class _CreateScreenState extends State<CreateScreen> {
                                   ),
                                 )
                               : Text(
-                                  'ADD',
+                                  'ارسال',
                                   style: TextStyle(
                                     fontFamily: 'Raleway',
                                     fontSize: 22,

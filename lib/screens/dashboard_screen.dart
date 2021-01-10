@@ -25,7 +25,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
           color: Colors.grey, //change your color here
         ),
         title: Text(
-          'Event Details',
+          'دعوتنامه ها',
           style: TextStyle(
             color: CustomColor.dark_blue,
             fontSize: 22,
